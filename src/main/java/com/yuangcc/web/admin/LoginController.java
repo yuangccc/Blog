@@ -1,4 +1,4 @@
-package com.yuangcc.web;
+package com.yuangcc.web.admin;
 
 import com.yuangcc.po.User;
 import com.yuangcc.service.UserService;

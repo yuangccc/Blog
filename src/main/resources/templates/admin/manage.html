@@ -9,7 +9,7 @@
 </head>
 <body>
 <!-- 顶部 -->
-<nav th:replace="admin/_fragments :: menu(n)" class="ui inverted attached segment m-shadow-small m-padded-tb-mini">
+<nav th:replace="admin/_fragments :: menu(1)" class="ui inverted attached segment m-shadow-small m-padded-tb-mini">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
             <h2 class="ui teal header item">管理后台</h2>
@@ -34,7 +34,7 @@
         <i class="sidebar icon"></i>
     </a>
 </nav>
-<div class="ui attached pointing menu">
+<div th:replace="admin/_fragments :: menu(2)" class="ui attached pointing menu">
     <div class="ui container">
         <div class="right menu">
             <a href="#" class="item">发布</a>

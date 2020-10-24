@@ -2,37 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d913c8f7-c47c-4bba-a9eb-f897c4d451b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/dao/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/Tag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/web/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/blog.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/dao/TypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/interceptor/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/TypesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/TypeserviceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/utils/MD5Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/web/admin/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/web/admin/TypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types-input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/_fragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/web/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/web/admin/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-input.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error/500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/web/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/_fragments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/admin-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/admin-input.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/archives.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/error/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/error/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/error/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/error/500.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/error/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/error/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/type.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/type.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,23 +97,37 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.49947312" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\Doc\project\blog\src\main\resources\templates\admin" />
       <recent name="H:\Doc\project\blog\src\main\resources\templates\error" />
+      <recent name="H:\Doc\project\blog\src\main\resources\static" />
+      <recent name="H:\Doc\project\blog\src\main\resources\templates" />
+      <recent name="H:\Doc\project\blog\src\main\resources" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="H:\Doc\project\blog\src\main\resources\templates\admin" />
-      <recent name="H:\Doc\project\blog\src\main\resources\static" />
-      <recent name="H:\Doc\project\blog\src\main\resources\templates" />
-      <recent name="H:\Doc\project\blog\src\main\resources" />
-      <recent name="H:\Doc\project\blog" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\Doc\project\blog\src\main\resources\templates\error" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.BlogApplication">
+    <configuration name="MD5Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yuangcc.utils.MD5Utils" />
+      <module name="blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuangcc.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="blog" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuangcc.BlogApplication" />
@@ -123,6 +135,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MD5Utils" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -140,12 +157,23 @@
       <workItem from="1603330674436" duration="11217000" />
       <workItem from="1603377557386" duration="1290000" />
       <workItem from="1603415625271" duration="24180000" />
-      <workItem from="1603502784164" duration="609000" />
+      <workItem from="1603502784164" duration="8032000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="722" y="73" key="#Assign_Data_Sources" timestamp="1603422680982">
@@ -164,10 +192,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="722" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603422581409" />
-    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1603429003934">
+    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1603518199696">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603429003934" />
+    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603518199696" />
     <state x="883" y="187" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1603422594274">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -180,38 +208,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603376055028" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1603458967594">
+    <state width="723" height="186" key="GridCell.Tab.0.bottom" timestamp="1603518218905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603458967594" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1603458967594">
+    <state width="723" height="186" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603518218905" />
+    <state width="723" height="186" key="GridCell.Tab.0.center" timestamp="1603518218904">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603458967594" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1603458967593">
+    <state width="723" height="186" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603518218904" />
+    <state width="723" height="186" key="GridCell.Tab.0.left" timestamp="1603518218904">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603458967593" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1603458967594">
+    <state width="723" height="186" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603518218904" />
+    <state width="723" height="186" key="GridCell.Tab.0.right" timestamp="1603518218904">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603458967594" />
-    <state width="1493" height="223" key="GridCell.Tab.1.bottom" timestamp="1603458967594">
+    <state width="723" height="186" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603518218904" />
+    <state width="723" height="186" key="GridCell.Tab.1.bottom" timestamp="1603518218905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603458967594" />
-    <state width="1493" height="223" key="GridCell.Tab.1.center" timestamp="1603458967594">
+    <state width="723" height="186" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603518218905" />
+    <state width="723" height="186" key="GridCell.Tab.1.center" timestamp="1603518218905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603458967594" />
-    <state width="1493" height="223" key="GridCell.Tab.1.left" timestamp="1603458967594">
+    <state width="723" height="186" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603518218905" />
+    <state width="723" height="186" key="GridCell.Tab.1.left" timestamp="1603518218905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603458967594" />
-    <state width="1493" height="223" key="GridCell.Tab.1.right" timestamp="1603458967594">
+    <state width="723" height="186" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603518218905" />
+    <state width="723" height="186" key="GridCell.Tab.1.right" timestamp="1603518218905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603458967594" />
+    <state width="723" height="186" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603518218905" />
     <state width="1493" height="208" key="GridCell.Tab.2.bottom" timestamp="1603377396154">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -232,10 +260,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="598" y="70" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1603421500398" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1603335002243">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1603519303699">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603335002243" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603519303699" />
     <state x="350" y="145" key="com.intellij.ide.util.TipDialog" timestamp="1603502792390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
