@@ -18,9 +18,9 @@
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
             <h2 class="ui teal header item">管理后台</h2>
-            <a href="#" class="top-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>管理</a>
-            <a href="#" class="top-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>分类</a>
-            <a href="#" class="top-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="tags icon"></i>标签</a>
+            <a href="#" th:href="@{/admin/manage}" class="top-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>管理</a>
+            <a href="#" th:href="@{/admin/types}" class="top-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>分类</a>
+            <a href="#" th:href="@{/admin/tags}" class="top-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
             <div class="right top-item m-mobile-hide menu">
                 <div class="ui dropdown item">
                     <div class="text">
@@ -39,6 +39,7 @@
         <i class="sidebar icon"></i>
     </a>
 </nav>
+<!--
 <div th:fragment="menu(n)" class="ui attached pointing menu">
     <div class="ui container">
         <div class="right menu">
@@ -47,6 +48,7 @@
         </div>
     </div>
 </div>
+-->
 
 <!-- 底部 -->
 <footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive">

@@ -35,11 +35,11 @@
         <i class="sidebar icon"></i>
     </a>
 </nav>
-<div th:replace="admin/_fragments :: menu(1)" class="ui attached pointing menu">
+<div class="ui attached pointing menu">
     <div class="ui container">
         <div class="right menu">
             <a href="#" class="active teal item">发布</a>
-            <a href="#" class="item">列表</a>
+            <a href="#" class="item" th:href="@{/admin/types}">列表</a>
         </div>
     </div>
 </div>
@@ -50,18 +50,27 @@
 <!-- 主体 -->
 <div class="m-container m-padded-tb-big m-container-small">
     <div class="ui container">
-        <form action="#" method="post" class="ui form">
-            <div class="field">
+        <form action="#" method="post" th:object="${type}" th:action="*{id} == null ? @{/admin/types} : @{/admin/types/{id}(id=*{id})}" class="ui form">
+            <input type="hidden" name="id" th:value="*{id}">
+            <div class="required  field">
                 <div class="ui left labeled input">
                     <label class="ui teal basic label">分类</label>
-                    <input type="text" name="name" placeholder="名称"/>
+                    <input type="text" name="name" placeholder="名称" th:value="*{name}"/>
                 </div>
             </div>
             <div class="ui error message"></div>
 
+            <!--/*/
+            <div class="ui negative message" th:if="${#fields.hasErrors('name')}"  >
+              <i class="close icon"></i>
+              <div class="header">验证失败</div>
+              <p th:errors="*{name}">提交信息不符合规则</p>
+            </div>
+             /*/-->
+
             <div class="ui right aligned container">
-                <button class="ui  button" onclick="window.history.go(-1)" type="button">返回</button>
-                <button class="ui  button teal">新增</button>
+                <button class="ui button" onclick="window.history.go(-1)" type="button">返回</button>
+                <button class="ui submit button teal">提交</button>
             </div>
 
         </form>
@@ -143,7 +152,7 @@
 
     $('.ui.form').form({
         fields: {
-            name: {
+            title: {
                 identifier: 'name',
                 rules: [{
                     type: 'empty',
@@ -152,6 +161,13 @@
             }
         }
     });
+
+    $('.message .close')
+        .on('click', function () {
+            $(this)
+                .closest('.message')
+                .transition('fade');
+        });
 </script>
 
 </body>

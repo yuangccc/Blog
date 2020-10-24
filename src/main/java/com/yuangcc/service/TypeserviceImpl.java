@@ -50,4 +50,10 @@ public class TypeserviceImpl implements TypesService{
     public void deleteType(Long id) {
         typerepository.delete(id);
     }
+
+    @Override
+    @Transactional
+    public Type getTypeByName(String name) {
+        return typerepository.findByName(name);
+    }
 }
