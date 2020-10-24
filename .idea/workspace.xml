@@ -24,6 +24,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/admin-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/admin-input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/archives.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/error/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/error/404.html" afterDir="false" />
@@ -138,6 +140,7 @@
       <workItem from="1603330674436" duration="11217000" />
       <workItem from="1603377557386" duration="1290000" />
       <workItem from="1603415625271" duration="24180000" />
+      <workItem from="1603502784164" duration="609000" />
     </task>
     <servers />
   </component>
