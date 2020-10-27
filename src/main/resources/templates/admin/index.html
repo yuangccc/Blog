@@ -43,7 +43,7 @@
         <div class="ui container">
             <div class="ui message success large">
                 <h2>Hi,</h2>
-                <p>yuangccc, 欢迎登录!</p>
+                <p><span th:text="${session.user.nickname}"/>, 欢迎登录!</p>
             </div>
 
             <img src="https://picsum.photos/id/101/1400/1000" alt="" class="ui image rounded borded fluid image">
@@ -94,7 +94,7 @@
     </div>
 </footer>
 
-<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+<!--/*/<th:block th:replace="admin/_fragments :: script">/*/-->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 <!--/*/</th:block>/*/-->

@@ -10,12 +10,12 @@
 </head>
 <body>
 <!-- 顶部 -->
-<nav th:replace="admin/_fragments :: menu(2)" class="ui inverted attached segment m-shadow-small m-padded-tb-mini">
+<nav th:replace="admin/_fragments :: menu(3)" class="ui inverted attached segment m-shadow-small m-padded-tb-mini">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
             <h2 class="ui teal header item">管理后台</h2>
             <a href="#" class="top-item item m-mobile-hide"><i class="home icon"></i>管理</a>
-            <a href="#" class="active top-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+            <a href="#" class="top-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
             <a href="#" class="top-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
             <div class="right top-item m-mobile-hide menu">
                 <div class="ui dropdown item">
@@ -39,7 +39,7 @@
     <div class="ui container">
         <div class="right menu">
             <a href="#" class="active teal item">发布</a>
-            <a href="#" class="item" th:href="@{/admin/types}">列表</a>
+            <a href="#" class="item" th:href="@{/admin/tags}">列表</a>
         </div>
     </div>
 </div>
@@ -50,11 +50,11 @@
 <!-- 主体 -->
 <div class="m-container m-padded-tb-big m-container-small">
     <div class="ui container">
-        <form action="#" method="post" th:object="${type}" th:action="*{id} == null ? @{/admin/types} : @{/admin/types/{id}(id=*{id})}" class="ui form">
+        <form action="#" method="post" th:object="${tag}" th:action="*{id} == null ? @{/admin/tags} : @{/admin/tags/{id}(id=*{id})}" class="ui form">
             <input type="hidden" name="id" th:value="*{id}">
             <div class="required  field">
                 <div class="ui left labeled input">
-                    <label class="ui teal basic label">分类</label>
+                    <label class="ui teal basic label">标签</label>
                     <input type="text" name="name" placeholder="名称" th:value="*{name}"/>
                 </div>
             </div>
@@ -123,7 +123,7 @@
     </div>
 </footer>
 
-<!--/*/<th:block th:replace="admin/_fragments :: script">/*/    -->
+<!--/*/<th:block th:replace="admin/_fragments :: script">/*/-->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 <script src="../../static/lib/editormd/editormd.min.js"></script>
@@ -156,7 +156,7 @@
                 identifier: 'name',
                 rules: [{
                     type: 'empty',
-                    prompt: '分类名称不能为空'
+                    prompt: '标签名称不能为空'
                 }]
             }
         }

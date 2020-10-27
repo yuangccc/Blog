@@ -1,5 +1,7 @@
 package com.yuangcc.po;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -13,6 +15,7 @@ public class Tag {
     @Id
     @GeneratedValue
     private Long id;
+    @NotBlank(message = "标签名不能为空")
     private String name;
 
     @ManyToMany(mappedBy = "tags")

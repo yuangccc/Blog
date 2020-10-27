@@ -77,8 +77,11 @@
             <tr>
                 <th colspan="6" >
                     <div class="ui mini pagination menu" th:if="${page.totalPages}>1">
-                        <a th:href="@{/admin/types(page=${page.number}-1)}" class="item" th:unless="${page.first}">上一页</a>
-                        <a th:href="@{/admin/types(page=${page.number}+1)}" class="item" th:unless="${page.last}">下一页</a>
+                        <a th:href="@{/admin/types(page=${page.number}-1)}" class="item" th:unless="${page.first}"><i class="left chevron icon"></i>上一页</a>
+                        <a th:href="@{/admin/types(page=${page.number}+1)}" class="item" th:unless="${page.last}">下一页 <i class="right chevron icon"></i></a>
+                    </div>
+                    <div class="ui floated mini segment compact m-padded-tb-small m-margin-tb-mini">
+                        <span>第</span><span th:text="${page.number}+1"></span><span>页</span>
                     </div>
                     <a href="#" th:href="@{/admin/types/input}"  class="ui mini right floated teal basic button">新增</a>
                 </th>
@@ -131,7 +134,7 @@
     </div>
 </footer>
 
-<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+<!--/*/<th:block th:replace="admin/_fragments :: script">/*/-->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 <!--/*/</th:block>/*/-->
