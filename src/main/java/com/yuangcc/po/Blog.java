@@ -6,7 +6,8 @@ import java.util.Date;
 import java.util.List;
 
 
-@Entity(name="t_blog")
+@Entity
+@Table(name= "t_blog")
 public class Blog {
 
     @Id
@@ -20,15 +21,16 @@ public class Blog {
     private String firstPicture;
     private String flag;
     private Integer views;
-    private boolean appreciation;
+    private boolean appreciation = true;
     private boolean shareStatement;
     private boolean commentabled;
     private boolean published;
-    private boolean recommend;
+    private boolean recommend = true;
     @Temporal(TemporalType.TIMESTAMP)
     private Date creatTime;
     @Temporal(TemporalType.TIMESTAMP)
     private Date updateTime;
+    private String description;
 
     @ManyToOne
     private Type type;
@@ -63,17 +65,6 @@ public class Blog {
         }
     }
 
-    public String getTagIds() {
-        return tagIds;
-    }
-
-    public void setTagIds(String tagIds) {
-        this.tagIds = tagIds;
-    }
-
-    public Blog() {
-    }
-
     @Override
     public String toString() {
         return "Blog{" +
@@ -90,11 +81,32 @@ public class Blog {
                 ", recommend=" + recommend +
                 ", creatTime=" + creatTime +
                 ", updateTime=" + updateTime +
+                ", description='" + description + '\'' +
                 ", type=" + type +
                 ", tags=" + tags +
                 ", user=" + user +
                 ", comments=" + comments +
+                ", tagIds='" + tagIds + '\'' +
                 '}';
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getTagIds() {
+        return tagIds;
+    }
+
+    public void setTagIds(String tagIds) {
+        this.tagIds = tagIds;
+    }
+
+    public Blog() {
     }
 
     public List<Comment> getComments() {

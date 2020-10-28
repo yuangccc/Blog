@@ -4,15 +4,19 @@ import com.yuangcc.NotFoundException;
 import com.yuangcc.dao.BlogRepository;
 import com.yuangcc.po.Blog;
 import com.yuangcc.po.Type;
+import com.yuangcc.utils.MyBeanUtils;
 import com.yuangcc.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.Transient;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
@@ -60,6 +64,21 @@ public class BlogServiceImpl implements BlogService{
 
     @Override
     @Transactional
+    public Page<Blog> listBlog(Pageable pageable) {
+        return blogRepository.findAll(pageable);
+    }
+
+    @Override
+    @Transactional
+    public List<Blog> listRecommendBlogTop(Integer size) {
+
+        Sort sort = new Sort(Sort.Direction.DESC, "updateTime");
+        Pageable pageable = new PageRequest(0, size, sort);
+        return blogRepository.findTop(pageable);
+    }
+
+    @Override
+    @Transactional
     public Blog saveBlog(Blog blog){
         if (blog.getId() == null){
             blog.setCreatTime(new Date());
@@ -78,7 +97,7 @@ public class BlogServiceImpl implements BlogService{
         if(b == null){
             throw new NotFoundException("该博客不存在。");
         }else {
-            BeanUtils.copyProperties(blog, b);
+            BeanUtils.copyProperties(blog, b, MyBeanUtils.getNullPropertiyName(blog));
             b.setUpdateTime(new Date());
             return blogRepository.save(b);
         }

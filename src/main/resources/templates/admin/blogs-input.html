@@ -58,7 +58,7 @@
                         <i class="dropdown icon"></i>
                         <div class="text">原创</div>
                         <div class="menu">
-                            <div class="item" data-value="原创">原创</div>
+                            <div class="item" selected data-value="原创">原创</div>
                             <div class="item" data-value="转载">转载</div>
                             <div class="item" data-value="翻译">翻译</div>
                         </div>
@@ -109,10 +109,14 @@
                 </div>
             </div>
 
+            <div class="required field">
+                <textarea name="description" th:text="*{description}" placeholder="博客描述..." maxlength="200"></textarea>
+            </div>
+
             <div class="inline fields">
                 <div class="field">
                     <div class="ui checkbox">
-                        <input type="checkbox" id="recommend" th:checked="*{recommend}" name="recommend" class="hidden" checked/>
+                        <input type="checkbox" id="recommend" checked th:checked="*{recommend}" name="recommend" class="hidden" />
                         <label for="recommend">推荐</label>
                     </div>
                 </div>
@@ -256,6 +260,13 @@
                 rules: [{
                     type: 'empty',
                     prompt: '请添加首图链接'
+                }]
+            },
+            description : {
+                identifier: 'description',
+                rules: [{
+                    type : 'empty',
+                    prompt: '请输入博客描述'
                 }]
             }
         }
