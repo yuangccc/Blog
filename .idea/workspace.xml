@@ -2,53 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d913c8f7-c47c-4bba-a9eb-f897c4d451b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/utils/MyBeanUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/utils/MyBeanUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/dao/CommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/CommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/utils/MarkdownUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/web/CommentCotroller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/useravatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myblog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myblog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/dao/BlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/dao/BlogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/dao/TagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/dao/TagRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/dao/TypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/dao/TypeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/Blog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/BlogService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/TagsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/TagsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/TagsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/TagsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/TypesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/TypesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/TypeserviceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/TypeserviceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/utils/MD5Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/utils/MD5Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/web/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs-input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/dao/BlogRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/dao/BlogRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/dao/TagRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/dao/TagRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/dao/TypeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/dao/TypeRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/po/Blog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/po/Blog.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/po/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/po/Comment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/po/Tag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/po/Tag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/po/Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/po/Type.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/po/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/service/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/service/BlogService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/service/BlogServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/service/BlogServiceImpl$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/service/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/service/BlogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/service/TagsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/service/TagsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/service/TagsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/service/TagsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/service/TypesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/service/TypesService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/service/TypeserviceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/service/TypeserviceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/utils/MD5Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/utils/MD5Utils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/web/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/web/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/blogs-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/blogs-input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/blogs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/tags-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/tags-input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/types-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/types-input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/types.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/types.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/_fragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +72,7 @@
         <item name="myblog@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="myblog: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="t_blog: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="t_comment: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -104,8 +88,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -142,30 +126,43 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../1.1 source_code.zip/1.1 source_code.zip/资料与配套代码/源代码/blog-5-功能实现-博客管理/blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/images" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.49947312" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\Doc\project\myblog\src\main\resources\static\images" />
+      <recent name="H:\Doc\project\myblog\src\main\resources\templates" />
+      <recent name="H:\Doc\project\myblog\src\main\resources\templates\admin" />
+      <recent name="H:\Doc\project\blog\src\main\resources\templates\admin" />
       <recent name="H:\Doc\project\blog\src\main\resources\templates\error" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="H:\Doc\project\myblog\src\main\resources\templates\admin" />
-      <recent name="H:\Doc\project\blog\src\main\resources\templates\admin" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\Doc\project\blog\src\main\resources\templates\error" />
-      <recent name="H:\Doc\project\blog\src\main\resources\static" />
-      <recent name="H:\Doc\project\blog\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.BlogApplication">
-    <configuration name="MD5Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MD5Utils" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yuangcc.utils.MD5Utils" />
+      <module name="myblog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuangcc.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MarkdownUtils" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yuangcc.utils.MarkdownUtils" />
       <module name="myblog" />
       <extension name="coverage">
         <pattern>
@@ -184,11 +181,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MD5Utils" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -213,7 +205,7 @@
       <workItem from="1603678061674" duration="24125000" />
       <workItem from="1603765383494" duration="31779000" />
       <workItem from="1603850148773" duration="10368000" />
-      <workItem from="1603869640377" duration="828000" />
+      <workItem from="1603869640377" duration="30305000" />
     </task>
     <task id="LOCAL-00001" summary="blog manage2">
       <created>1603805352540</created>
@@ -222,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603805352540</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="blog index">
+      <created>1603871469712</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603871469712</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +243,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="blog manage" />
     <MESSAGE value="blog manage2" />
-    <option name="LAST_COMMIT_MESSAGE" value="blog manage2" />
+    <MESSAGE value="blog index" />
+    <option name="LAST_COMMIT_MESSAGE" value="blog index" />
   </component>
   <component name="WindowStateProjectService">
     <state x="722" y="73" key="#Assign_Data_Sources" timestamp="1603863451711">
@@ -263,10 +263,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="514" y="93" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603696457554" />
-    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1603850415663">
+    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1603941692843">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603850415663" />
+    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603941692843" />
     <state x="883" y="187" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1603422594274">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -279,46 +279,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="474" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1603593978125" />
-    <state x="310" y="4" key="CommitChangelistDialog2" timestamp="1603805351420">
+    <state x="310" y="4" key="CommitChangelistDialog2" timestamp="1603871465602">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="310" y="4" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603805351420" />
+    <state x="310" y="4" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603871465602" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1603803327420">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603803327420" />
-    <state width="723" height="310" key="GridCell.Tab.0.bottom" timestamp="1603864374735">
+    <state width="723" height="136" key="GridCell.Tab.0.bottom" timestamp="1603958941128">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="310" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603864374735" />
-    <state width="723" height="310" key="GridCell.Tab.0.center" timestamp="1603864374735">
+    <state width="723" height="136" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603958941128" />
+    <state width="723" height="136" key="GridCell.Tab.0.center" timestamp="1603958941127">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="310" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603864374735" />
-    <state width="723" height="310" key="GridCell.Tab.0.left" timestamp="1603864374734">
+    <state width="723" height="136" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603958941127" />
+    <state width="723" height="136" key="GridCell.Tab.0.left" timestamp="1603958941127">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="310" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603864374734" />
-    <state width="723" height="310" key="GridCell.Tab.0.right" timestamp="1603864374735">
+    <state width="723" height="136" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603958941127" />
+    <state width="723" height="136" key="GridCell.Tab.0.right" timestamp="1603958941127">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="310" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603864374735" />
-    <state width="723" height="310" key="GridCell.Tab.1.bottom" timestamp="1603864374735">
+    <state width="723" height="136" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603958941127" />
+    <state width="723" height="136" key="GridCell.Tab.1.bottom" timestamp="1603958941128">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="310" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603864374735" />
-    <state width="723" height="310" key="GridCell.Tab.1.center" timestamp="1603864374735">
+    <state width="723" height="136" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603958941128" />
+    <state width="723" height="136" key="GridCell.Tab.1.center" timestamp="1603958941128">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="310" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603864374735" />
-    <state width="723" height="310" key="GridCell.Tab.1.left" timestamp="1603864374735">
+    <state width="723" height="136" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603958941128" />
+    <state width="723" height="136" key="GridCell.Tab.1.left" timestamp="1603958941128">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="310" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603864374735" />
-    <state width="723" height="310" key="GridCell.Tab.1.right" timestamp="1603864374735">
+    <state width="723" height="136" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603958941128" />
+    <state width="723" height="136" key="GridCell.Tab.1.right" timestamp="1603958941128">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="310" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603864374735" />
+    <state width="723" height="136" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603958941128" />
     <state width="1493" height="419" key="GridCell.Tab.2.bottom" timestamp="1603862416844">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -351,10 +351,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="618" y="124" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1603804911880" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603805371085">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603871485910">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603805371085" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603871485910" />
+    <state x="1005" y="285" width="340" height="259" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603953334333">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="1005" y="285" width="340" height="259" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1603953334333" />
     <state x="862" y="54" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1603810209603">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -363,18 +367,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="541" y="251" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1603869806146" />
-    <state x="321" y="148" width="894" height="605" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603528266123">
+    <state x="321" y="148" width="894" height="605" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603936237602">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="321" y="148" width="894" height="605" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1603528266123" />
+    <state x="321" y="148" width="894" height="605" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1603936237602" />
     <state x="470" y="39" key="refactoring.ChangeSignatureDialog" timestamp="1603594720779">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="470" y="39" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1603594720779" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1603801330214">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1603901184433">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603801330214" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603901184433" />
     <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603542942218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

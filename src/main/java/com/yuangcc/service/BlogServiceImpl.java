@@ -4,6 +4,7 @@ import com.yuangcc.NotFoundException;
 import com.yuangcc.dao.BlogRepository;
 import com.yuangcc.po.Blog;
 import com.yuangcc.po.Type;
+import com.yuangcc.utils.MarkdownUtils;
 import com.yuangcc.utils.MyBeanUtils;
 import com.yuangcc.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
@@ -40,6 +41,22 @@ public class BlogServiceImpl implements BlogService{
 
     @Override
     @Transactional
+    public Blog getAndConvert(Long id) {
+
+        Blog blog = blogRepository.findOne(id);
+        if(blog == null){
+            throw new NotFoundException("该博客不存在。");
+        }
+        Blog b = new Blog();
+        BeanUtils.copyProperties(blog, b);
+        String content = b.getContent();
+        b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+//        blogRepository.updateViews(id);
+        return b;
+    }
+
+    @Override
+    @Transactional
     public Page<Blog> listBlog(Pageable pageable, BlogQuery blog) {
         return blogRepository.findAll(new Specification<Blog>() {
             @Override
@@ -66,6 +83,11 @@ public class BlogServiceImpl implements BlogService{
     @Transactional
     public Page<Blog> listBlog(Pageable pageable) {
         return blogRepository.findAll(pageable);
+    }
+
+    @Override
+    public Page<Blog> listBlog(String query, Pageable pageable) {
+        return blogRepository.findByQuery(query, pageable);
     }
 
     @Override

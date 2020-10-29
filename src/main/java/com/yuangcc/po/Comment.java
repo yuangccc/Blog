@@ -1,7 +1,5 @@
 package com.yuangcc.po;
 
-import org.hibernate.annotations.Cascade;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
@@ -17,11 +15,11 @@ public class Comment {
     private String nickname;
     private String email;
     private String content;
-    private String avatat;
+    private String avatar;
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
     @ManyToOne
-    private Blog blogs;
+    private Blog blog;
     @OneToMany(mappedBy = "parentComment")
     private List<Comment> replyCommnet = new ArrayList<>();
     @ManyToOne
@@ -37,9 +35,9 @@ public class Comment {
                 ", nickname='" + nickname + '\'' +
                 ", email='" + email + '\'' +
                 ", content='" + content + '\'' +
-                ", avatat='" + avatat + '\'' +
+                ", avatar='" + avatar + '\'' +
                 ", createTime=" + createTime +
-                ", blogs=" + blogs +
+                ", blogs=" + blog +
                 ", replyCommnet=" + replyCommnet +
                 ", parentComment=" + parentComment +
                 '}';
@@ -61,12 +59,12 @@ public class Comment {
         this.parentComment = parentComment;
     }
 
-    public Blog getBlogs() {
-        return blogs;
+    public Blog getBlog() {
+        return blog;
     }
 
-    public void setBlogs(Blog blogs) {
-        this.blogs = blogs;
+    public void setBlog(Blog blogs) {
+        this.blog = blogs;
     }
 
     public Date getCreateTime() {
@@ -109,12 +107,12 @@ public class Comment {
         this.content = content;
     }
 
-    public String getAvatat() {
-        return avatat;
+    public String getAvatar() {
+        return avatar;
     }
 
-    public void setAvatat(String avatat) {
-        this.avatat = avatat;
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 
 }

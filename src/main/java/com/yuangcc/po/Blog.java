@@ -38,7 +38,7 @@ public class Blog {
     private List<Tag> tags = new ArrayList<>();
     @ManyToOne
     private User user;
-    @OneToMany(mappedBy = "blogs")
+    @OneToMany(mappedBy = "blog")
     private List<Comment> comments = new ArrayList<>();
     @Transient
     private String tagIds;
