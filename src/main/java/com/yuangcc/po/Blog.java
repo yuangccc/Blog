@@ -21,11 +21,11 @@ public class Blog {
     private String firstPicture;
     private String flag;
     private Integer views;
-    private boolean appreciation = true;
+    private boolean appreciation;
     private boolean shareStatement;
     private boolean commentabled;
     private boolean published;
-    private boolean recommend = true;
+    private boolean recommend;
     @Temporal(TemporalType.TIMESTAMP)
     private Date creatTime;
     @Temporal(TemporalType.TIMESTAMP)

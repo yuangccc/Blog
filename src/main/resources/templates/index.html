@@ -109,13 +109,13 @@
                                 <i class="idea icon"></i>分类
                             </div>
                             <div class="right aligned column">
-                                <a href="#" target="_blank">more<i class="angle double right icon"></i></a>
+                                <a href="#" target="_blank" th:href="@{/types/-1}">more<i class="angle double right icon"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="ui teal segment">
                         <div class="ui vertical fluid menu">
-                            <a href="#" class="item" th:each="type : ${types}">
+                            <a href="#" class="item" th:each="type : ${types}" th:href="@{/types/{id}(id=${type.id})}" target="_blank">
                                 <span th:text="${type.name}">学习日志</span>
                                 <div class="ui basic teal left pointing label" th:text="${#arrays.length(type.blogs)}">13</div>
                             </a>
@@ -152,12 +152,12 @@
                                 <i class="tags icon"></i>标签
                             </div>
                             <div class="right aligned column">
-                                <a href="#" target="_blank">more<i class="angle double right icon"></i></a>
+                                <a href="#" target="_blank" th:href="@{/tags/-1}">more<i class="angle double right icon"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="ui teal segment">
-                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny" th:each="tag : ${tags}">
+                        <a href="#" target="_blank" th:href="@{/tags/{id}(id=${tag.id})}" class="ui teal basic left pointing label m-margin-tb-tiny" th:each="tag : ${tags}">
                             <span th:text="${tag.name}">方法论</span>
                             <div class="detail" th:text="${#arrays.length(tag.blogs)}">2</div>
                         </a>

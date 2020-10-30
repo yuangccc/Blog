@@ -38,7 +38,7 @@
         <div class="ui stackable grid">
             <div class="eleven wide column">
                 <div class="ui segment">
-                    <img src="https://picsum.photos/id/101/800/600" class="ui rounded image">
+                    <img src="https://picsum.photos/id/101/800/600" th:src="@{https://picsum.photos/id/101/800/600}" class="ui rounded image">
                 </div>
             </div>
             <div class="five wide column">
@@ -62,13 +62,13 @@
                     <div class="ui basic teal label m-margin-tb-tiny">写作</div>
                 </div>
                 <div class="ui bottom attached segment">
-                    <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                    <a href="https://github.com/yuangccc" target="_blank" class="ui circular icon button"><i class="github icon"></i></a>
                     <a href="#" class="ui wechat circular icon button"><i class="wechat icon"></i></a>
                     <a href="#" class="ui qq circular icon button" data-content="937714759"
                        data-position="bottom center"><i class="qq icon"></i></a>
                 </div>
                 <div class="ui wechatQR flowing popup transition hidden">
-                    <img src="static/images/码.jpg" alt="" class="ui rounded image" style="width: 150px">
+                    <img src="static/images/码.jpg" th:src="@{/images/码.jpg}" alt="" class="ui rounded image" style="width: 150px">
                 </div>
             </div>
         </div>

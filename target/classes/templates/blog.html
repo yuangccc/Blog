@@ -173,27 +173,33 @@ h5,h6{font-size:1em;}
                 <div class="ui basic teal right pointing label" th:each="tag : ${blog.tags}" th:text="${tag.name}">方法论</div>
             </div>
             <!-- 赞赏 -->
-            <div class="ui center aligned segment basic">
-                <button id="payBtn" class="ui orange button basic circalar">赞赏</button>
-            </div>
-            <div class="ui payQR flowing popup top left transition hidden">
-                <div class="ui label orange basic">
-                    <div class="ui images" style="font-size: inherit !important;">
-                        <div class="ui image">
-                            <img src="../static/images/码.jpg" th:src="@{/images/码.jpg}" alt="" class="ui rounded bordered image" style="width:120px">
-                            <div>支付宝</div>
-                        </div>
-                        <div class="ui image">
-                            <img src="../static/images/interlaced.png" th:src="@{/images/interlaced.png}" alt="" class="ui rounded bordered image"
-                                 style="width:120px">
-                            <div>微信</div>
+            <div th:if="${blog.appreciation}">
+                <div class="ui center aligned basic segment">
+                    <button id="payBtn" class="ui orange basic circular button">赞赏</button>
+                </div>
+                <div class="ui payQR flowing popup transition hidden" style="z-index: 1 !important;">
+                    <div class="ui label orange basic">
+                        <div class="ui images" style="font-size: inherit !important;">
+                            <div class="ui image">
+                                <img src="../static/images/码.jpg" th:src="@{/images/码.jpg}" alt="" class="ui rounded bordered image" style="width:120px">
+                                <div>支付宝</div>
+                            </div>
+                            <div class="ui image">
+                                <img src="../static/images/interlaced.png" th:src="@{/images/interlaced.png}" alt="" class="ui rounded bordered image"
+                                     style="width:120px">
+                                <div>微信</div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <br>
+                <br>
+                <br>
+                <br>
             </div>
         </div>
 
-        <div class="ui attached positive message">
+        <div class="ui attached positive message" th:if="${blog.shareStatement}">
             <!-- 信息 -->
             <div class="ui middle aligned grid">
                 <div class="ui eleven wide column">
@@ -210,7 +216,7 @@ h5,h6{font-size:1em;}
                 </div>
             </div>
         </div>
-        <div class="ui bottom attached segment">
+        <div class="ui bottom attached segment" th:if="${blog.commentabled}">
             <!-- 留言评论 -->
             <div id="comment-container" class="ui teal segment">
                 <div th:fragment="commentList">
