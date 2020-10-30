@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d913c8f7-c47c-4bba-a9eb-f897c4d451b5" name="Default Changelist" comment="" />
+    <list default="true" id="d913c8f7-c47c-4bba-a9eb-f897c4d451b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/web/TagShowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/web/TypeShowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/dao/BlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/dao/BlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/dao/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/dao/CommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/po/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/BlogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/service/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yuangcc/web/CommentCotroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yuangcc/web/CommentCotroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/me.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/me.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/type.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/types.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/dao/BlogRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/dao/BlogRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/dao/CommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/dao/CommentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/po/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/po/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/service/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/service/BlogServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/service/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/service/CommentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yuangcc/web/CommentCotroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yuangcc/web/CommentCotroller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/me.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/me.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/_fragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/type.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,20 +63,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="myblog: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="myblog@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="myblog: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="t_comment: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="myblog@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="myblog: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="t_user: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -55,8 +70,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -100,17 +115,20 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="H:\Doc\project\myblog\src\main\resources\static\images" />
-      <recent name="H:\Doc\project\myblog\src\main\resources\templates" />
-      <recent name="H:\Doc\project\myblog\src\main\resources\templates\admin" />
-      <recent name="H:\Doc\project\blog\src\main\resources\templates\admin" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yuangcc.web" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\Doc\project\blog\src\main\resources\templates\error" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\Doc\project\myblog\src\main\resources\static\images" />
+      <recent name="H:\Doc\project\myblog\src\main\resources\templates" />
+      <recent name="H:\Doc\project\myblog\src\main\resources\templates\admin" />
+      <recent name="H:\Doc\project\blog\src\main\resources\templates\admin" />
       <recent name="H:\Doc\project\blog\src\main\resources\templates\error" />
     </key>
   </component>
@@ -149,6 +167,28 @@
       </method>
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:myblog@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:myblog@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@72dc95a6" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -172,7 +212,8 @@
       <workItem from="1603678061674" duration="24125000" />
       <workItem from="1603765383494" duration="31779000" />
       <workItem from="1603850148773" duration="10368000" />
-      <workItem from="1603869640377" duration="30577000" />
+      <workItem from="1603869640377" duration="42135000" />
+      <workItem from="1604021284704" duration="16912000" />
     </task>
     <task id="LOCAL-00001" summary="blog manage2">
       <created>1603805352540</created>
@@ -238,10 +279,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="514" y="93" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603696457554" />
-    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1603941692843">
+    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1604043873785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603941692843" />
+    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604043873785" />
     <state x="883" y="187" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1603422594274">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -254,62 +295,66 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="474" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1603593978125" />
-    <state x="310" y="4" key="CommitChangelistDialog2" timestamp="1603959738844">
+    <state x="310" y="4" key="CommitChangelistDialog2" timestamp="1604049716654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="310" y="4" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603959738844" />
+    <state x="310" y="4" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604049716654" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1604049248123">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1536.824@0.0.1536.824" timestamp="1604049248123" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1603803327420">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603803327420" />
-    <state width="1493" height="219" key="GridCell.Tab.0.bottom" timestamp="1603959746156">
+    <state width="1266" height="386" key="GridCell.Tab.0.bottom" timestamp="1604049606979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="219" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603959746156" />
-    <state width="1493" height="219" key="GridCell.Tab.0.center" timestamp="1603959746156">
+    <state width="1266" height="386" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604049606979" />
+    <state width="1266" height="386" key="GridCell.Tab.0.center" timestamp="1604049606979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="219" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603959746156" />
-    <state width="1493" height="219" key="GridCell.Tab.0.left" timestamp="1603959746156">
+    <state width="1266" height="386" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604049606979" />
+    <state width="1266" height="386" key="GridCell.Tab.0.left" timestamp="1604049606978">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="219" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603959746156" />
-    <state width="1493" height="219" key="GridCell.Tab.0.right" timestamp="1603959746156">
+    <state width="1266" height="386" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604049606978" />
+    <state width="1266" height="386" key="GridCell.Tab.0.right" timestamp="1604049606979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="219" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603959746156" />
-    <state width="1493" height="219" key="GridCell.Tab.1.bottom" timestamp="1603959746157">
+    <state width="1266" height="386" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604049606979" />
+    <state width="1493" height="573" key="GridCell.Tab.1.bottom" timestamp="1604048629476">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="219" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603959746157" />
-    <state width="1493" height="219" key="GridCell.Tab.1.center" timestamp="1603959746157">
+    <state width="1493" height="573" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604048629476" />
+    <state width="1493" height="573" key="GridCell.Tab.1.center" timestamp="1604048629476">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="219" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603959746157" />
-    <state width="1493" height="219" key="GridCell.Tab.1.left" timestamp="1603959746157">
+    <state width="1493" height="573" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604048629476" />
+    <state width="1493" height="573" key="GridCell.Tab.1.left" timestamp="1604048629476">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="219" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603959746157" />
-    <state width="1493" height="219" key="GridCell.Tab.1.right" timestamp="1603959746157">
+    <state width="1493" height="573" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604048629476" />
+    <state width="1493" height="573" key="GridCell.Tab.1.right" timestamp="1604048629476">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="219" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603959746157" />
-    <state width="1493" height="419" key="GridCell.Tab.2.bottom" timestamp="1603862416844">
+    <state width="1493" height="573" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604048629476" />
+    <state width="1493" height="419" key="GridCell.Tab.2.bottom" timestamp="1604025048078">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="419" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603862416844" />
-    <state width="1493" height="419" key="GridCell.Tab.2.center" timestamp="1603862416844">
+    <state width="1493" height="419" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604025048078" />
+    <state width="1493" height="419" key="GridCell.Tab.2.center" timestamp="1604025048077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="419" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1603862416844" />
-    <state width="1493" height="419" key="GridCell.Tab.2.left" timestamp="1603862416844">
+    <state width="1493" height="419" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1604025048077" />
+    <state width="1493" height="419" key="GridCell.Tab.2.left" timestamp="1604025048077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="419" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1603862416844" />
-    <state width="1493" height="419" key="GridCell.Tab.2.right" timestamp="1603862416844">
+    <state width="1493" height="419" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1604025048077" />
+    <state width="1493" height="419" key="GridCell.Tab.2.right" timestamp="1604025048078">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="419" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1603862416844" />
+    <state width="1493" height="419" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1604025048078" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1603696434288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -326,22 +371,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="618" y="124" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1603804911880" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603959914098">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604049737657">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603959914098" />
-    <state x="1005" y="285" width="340" height="259" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603953334333">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604049737657" />
+    <state x="1005" y="285" width="340" height="259" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603982581307">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="1005" y="285" width="340" height="259" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1603953334333" />
+    <state x="1005" y="285" width="340" height="259" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1603982581307" />
     <state x="862" y="54" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1603810209603">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="862" y="54" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1603810209603" />
-    <state x="541" y="251" key="com.intellij.ide.util.TipDialog" timestamp="1603869806146">
+    <state x="541" y="251" key="com.intellij.ide.util.TipDialog" timestamp="1604021310784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="541" y="251" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1603869806146" />
+    <state x="541" y="251" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1604021310784" />
     <state x="321" y="148" width="894" height="605" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603936237602">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -354,10 +399,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603901184433" />
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603542942218">
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604035543783">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603542942218" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604035543783" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -366,6 +411,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/yuangcc/NotFoundException.java</url>
           <line>22</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/yuangcc/web/CommentCotroller.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/yuangcc/web/CommentCotroller.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

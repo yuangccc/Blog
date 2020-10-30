@@ -54,7 +54,7 @@
                 <div class="ui padded vertical segment m-mobile-lr-clear m-padded-tb-large" th:each="blog : ${page.content}">
                     <div class="ui middle aligned mobile reversed stackable grid">
                         <div class="ui eleven wide column">
-                            <h3><a href="#" th:text="${blog.title}" class="m-black" target="_blank" th:href="@{/blog/{id}(id=${id})}">你真的理解什么是财富自由吗?</a></h3>
+                            <h3><a href="#" th:text="${blog.title}" class="m-black" target="_blank" th:href="@{/blog/{id}(id=${blog.id})}">你真的理解什么是财富自由吗?</a></h3>
                             <p class="m-text" th:text="|${blog.description}......|">正确做好任何一件事情的前提是清晰,正确的目标.
                                 而事实是,我们很多人很多时候根本没有对目标有正确的定义,甚至根本从来就没有想过,只是大家都这么做而已...</p>
                             <div class="ui stackable grid">
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                         <div class="ui five wide column">
-                            <a href="#" target="_blank">
+                            <a href="#" target="_blank" th:href="@{/blog/{id}(id=${blog.id})}" >
                                 <img src="https://picsum.photos/id/101/800/450" th:src="${blog.firstPicture}" alt="" class="ui rounded image">
                             </a>
                         </div>

@@ -210,30 +210,56 @@ h5,h6{font-size:1em;}
                 </div>
             </div>
         </div>
-        <div class="ui bottom attached segment ">
+        <div class="ui bottom attached segment">
             <!-- 留言评论 -->
             <div id="comment-container" class="ui teal segment">
                 <div th:fragment="commentList">
+
                     <div class="ui threaded comments" style="max-width: 100%;">
                         <h3 class="ui dividing header">评论</h3>
                         <div class="comment" th:each="comment : ${comments}">
-                            <a class="avatar">
-                                <img src="../static/images/tou1.jpg" th:src="@{${comment.avatar}}">
+                        <a class="avatar">
+                            <img src="../static/images/tou1.jpg" th:src="@{${comment.avatar}}">
+                        </a>
+                        <div class="content">
+                            <a class="author">
+                                <span th:text="${comment.nickname}">Matt</span>
+                                <div class="ui mini basic teal left pointing label m-padded-mini" th:if="${comment.adminComment}">博主</div>
                             </a>
-                            <div class="content">
-                                <a class="author">
-                                    <span th:text="${comment.nickname}">Matt</span>
-                                <div class="metadata">
-                                    <span class="date" th:text="${#dates.format(comment.createTime, 'yyyy-MM-dd HH:mm')}">Today at 5:42PM</span>
-                                </div>
-                                <div class="text" th:text="${comment.content}">
-                                    How artistic!
-                                </div>
-                                <div class="actions">
-                                    <a class="reply" data-commentid="1" data-commentnickname="matt" th:attr="data-commentid=${comment.id}, data-commentnickname=${comment.nickname}" onclick="reply(this)">回复</a>
+                            <div class="metadata">
+                                <span class="date" th:text="${#dates.format(comment.createTime, 'yyyy-MM-dd HH:mm')}">Today at 5:42PM</span>
+                            </div>
+                            <div class="text" th:text="${comment.content}">
+                                How artistic!
+                            </div>
+                            <div class="actions">
+                                <a class="reply" data-commentid="1" data-commentnickname="matt" th:attr="data-commentid=${comment.id}, data-commentnickname=${comment.nickname}" onclick="reply(this)">回复</a>
+                            </div>
+                        </div>
+                        <div class="comments" th:if="${#arrays.length(comment.replyComments)>0}">
+                            <div class="comment" th:each="reply : ${comment.replyComments}">
+                                <a class="avatar">
+                                    <img src="../static/images/tou1.jpg" th:src="@{${reply.avatar}}">
+                                </a>
+                                <div class="content">
+                                    <a class="author">
+                                        <span th:text="${reply.nickname}">Matt</span>&nbsp;
+                                        <div class="ui mini basic teal left pointing label m-padded-mini" th:if="${reply.adminComment}">博主</div>
+                                        <span th:text="| @${reply.parentComment.nickname}|" class="m-teal">@ mattt</span>
+                                    </a>
+                                    <div class="metadata">
+                                        <span class="date" th:text="${#dates.format(reply.createTime, 'yyyy-MM-dd HH:mm')}">Today at 5:42PM</span>
+                                    </div>
+                                    <div class="text" th:text="${reply.content}">
+                                        How artistic!
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply" data-commentid="1" data-commentnickname="matt" th:attr="data-commentid=${reply.id}, data-commentnickname=${reply.nickname}" onclick="reply(this)">回复</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
                         <!--/*-->
                         <div class="comment">
                             <a class="avatar">
@@ -290,6 +316,7 @@ h5,h6{font-size:1em;}
                         </div>
                         <!--*/-->
                     </div>
+
                 </div>
             </div>
 
@@ -303,13 +330,13 @@ h5,h6{font-size:1em;}
                 <div class="fields">
                     <div class="field m-mobile-wide m-margin-tb-small">
                         <div class="ui left icon input">
-                            <input type="text" name="nickname" placeholder="姓名"/>
+                            <input type="text" name="nickname" placeholder="姓名" th:value="${session.user}!=null ? ${session.user.nickname}"/>
                             <i class="user icon"></i>
                         </div>
                     </div>
                     <div class="field m-mobile-wide m-margin-tb-small">
                         <div class="ui left icon input">
-                            <input type="text" name="email" placeholder="邮箱"/>
+                            <input type="text" name="email" placeholder="邮箱" th:value="${session.user}!=null ? ${session.user.email}"/>
                             <i class="mail icon"></i>
                         </div>
                     </div>
@@ -479,6 +506,9 @@ h5,h6{font-size:1em;}
         }
     });
 
+    $(function(){
+        $("#comment-container").load(/*[[@{/comments/{id}(id=${blog.id})}]]*/"");
+    });
 
     $('#commentpost-btn').click(function(){
 
@@ -499,8 +529,7 @@ h5,h6{font-size:1em;}
             "email" : $("[name='email']").val(),
             "content" : $("[name='content']").val()
         },function(responseTxt, statusTxt, xhr){
-
-            $(window.scrollTo($('#comment-container'), 500));
+            // $(window).scrollTo($('#comment-container'), 500);
             clearContent();
         });
     }
@@ -516,8 +545,7 @@ h5,h6{font-size:1em;}
       var commentNickname = $(obj).data('commentnickname');
       $("[name='content']").attr("placeholder", "@"+commentNickname).focus();
       $("[name='parentComment.id']").val(commentid);
-      $(window.scrollTo($('#comment-form'), 500));
-
+      $(window).scrollTo($('#comment-form'), 500);
     }
 </script>
 

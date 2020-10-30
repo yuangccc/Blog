@@ -19,9 +19,9 @@
         <div class="ui inverted secondary stackable menu">
             <h2 class="ui teal header item">Blog</h2>
             <a href="#" class="top-item item m-mobile-hide" th:href="@{/}" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
-            <a href="#" class="top-item item m-mobile-hide" th:href="@{/type}" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>分类</a>
-            <a href="#" class="top-item item m-mobile-hide" th:href="@{/tags}" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
-            <a href="#" class="top-item item m-mobile-hide" th:href="@{/archives}" th:classappend="${n==4} ? 'active'"><i class="clone icon"></i>归档</a>
+            <a href="#" class="top-item item m-mobile-hide" th:href="@{/types/-1}" th:classappend="${n==2} ? 'active'"><i class="idea icon"></i>分类</a>
+            <a href="#" class="top-item item m-mobile-hide" th:href="@{/tags/-1}" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
+            <a href="#" class="top-item item m-mobile-hide" th:href="@{/archives/-1}" th:classappend="${n==4} ? 'active'"><i class="clone icon"></i>归档</a>
             <a href="#" class="top-item item m-mobile-hide" th:href="@{/about}" th:classappend="${n==5} ? 'active'"><i class="info icon"></i>关于我</a>
             <div class="right top-item item m-mobile-hide">
                 <form method="post" id="search" action="#" th:action="@{/search}" target="_blank">

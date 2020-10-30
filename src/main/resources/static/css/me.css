@@ -163,6 +163,10 @@ body {
     color: #333;
 }
 
+.m-teal{
+    color: #00B5AD !important;
+}
+
 /* **********position*********************************************** */
 .m-sidebar-topright {
     position: absolute;

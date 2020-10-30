@@ -21,9 +21,11 @@ public class Comment {
     @ManyToOne
     private Blog blog;
     @OneToMany(mappedBy = "parentComment")
-    private List<Comment> replyCommnet = new ArrayList<>();
+    private List<Comment> replyComments = new ArrayList<>();
     @ManyToOne
     private Comment parentComment;
+
+    private boolean adminComment;
 
     public Comment() {
     }
@@ -37,18 +39,27 @@ public class Comment {
                 ", content='" + content + '\'' +
                 ", avatar='" + avatar + '\'' +
                 ", createTime=" + createTime +
-                ", blogs=" + blog +
-                ", replyCommnet=" + replyCommnet +
+                ", blog=" + blog +
+                ", replyComments=" + replyComments +
                 ", parentComment=" + parentComment +
+                ", adminComment=" + adminComment +
                 '}';
     }
 
-    public List<Comment> getReplyCommnet() {
-        return replyCommnet;
+    public boolean isAdminComment() {
+        return adminComment;
     }
 
-    public void setReplyCommnet(List<Comment> replyCommnet) {
-        this.replyCommnet = replyCommnet;
+    public void setAdminComment(boolean adminComment) {
+        this.adminComment = adminComment;
+    }
+
+    public List<Comment> getReplyComments() {
+        return replyComments;
+    }
+
+    public void setReplyComments(List<Comment> replyCommnet) {
+        this.replyComments = replyCommnet;
     }
 
     public Comment getParentComment() {
