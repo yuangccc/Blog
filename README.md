@@ -1,6 +1,6 @@
 # 个人博客系统
 
-基于`spring boot 1.5.7`和`semantic ui`的博客。   
+基于`Spring boot 1.5.7`和`semantic UI`的博客。   
 
 ## 技术选型
 
@@ -27,6 +27,7 @@
 * 加入生成网页二维码功能，可以扫描二维码在手机端查看。
 
 ## 页面展示：
+
 ### 管理端页面：
 
 * 登录页面
@@ -40,6 +41,7 @@
 
 * 博客分类管理：
 <img src="https://github.com/yuangccc/Blog/blob/devblog/README_img/%E5%8D%9A%E5%AE%A2%E5%88%86%E7%B1%BB%E7%AE%A1%E7%90%86.jpg">
+
 ### 游客端页面：
 
 * 首页：
@@ -53,6 +55,7 @@
 
 * 归档页：
 <img src="https://github.com/yuangccc/Blog/blob/devblog/README_img/%E5%BD%92%E6%A1%A3%E9%A1%B5.jpg">
+
 ### 手机端适配展示：
 
 * 首页适配：
